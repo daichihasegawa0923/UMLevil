@@ -8,7 +8,9 @@
         Title="MainWindow" Height="450" Width="704">
     <Grid HorizontalAlignment="Stretch">
         <Menu HorizontalAlignment="Stretch" Height="20" VerticalAlignment="Top" Margin="0,0,0,0">
-            <MenuItem Header="ファイル(_F)"/>
+            <MenuItem Header="ファイル(_F)">
+                <MenuItem Header="保存(Ctrl + S)"></MenuItem>
+            </MenuItem>
             <MenuItem Header="このアプリケーションについて(_X)"/>
         </Menu>
 
