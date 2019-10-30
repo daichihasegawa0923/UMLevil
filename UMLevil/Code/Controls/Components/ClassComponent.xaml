@@ -1,0 +1,50 @@
+﻿<UserControl x:Class="UMLevil.Controls.Components.ClassComponent"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:UMLevil.Controls.Components"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" Width="369.014">
+    <UserControl.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="../../Style/style.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </UserControl.Resources>
+    <Grid Margin="0,0,0,10"
+          Background="LightCyan">
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="30"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+            <Border Grid.Row="0" Style="{StaticResource MainBorderStyle}">
+                <Label Content="ClassName"/>
+            </Border>
+            <Border Grid.Row="1">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="40"/>
+                    </Grid.RowDefinitions>
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="30"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="30"/>
+                        </Grid.RowDefinitions>
+                        <Button Content="M" Grid.Column="0"/>
+                        <TextBlock Text="メンバー" Grid.Column="1"/>
+                    </Grid>
+                    <Button Grid.Row="1" Width="40" HorizontalAlignment="Right" Content="+"/>
+                </Grid>
+            </Border>
+        </Grid>
+    </Grid>
+</UserControl>
